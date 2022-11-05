@@ -1,0 +1,15 @@
+.button {
+  background-color: $white;
+  color: $brand-primary;
+  text-transform: lowercase;
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-size: 22px;
+  padding: 10px 18px;
+  border: 1px solid $brand-primary;
+
+  &-large {
+    padding: 20px 36px;
+    font-size: 44px;
+  }
+}
