@@ -1,9 +1,11 @@
+import Header from '../components/common/header/Header';
+
 export default function Home() {
   return (
     <div>
-      <button className="button button-primary">view all</button>
-      <button className="button button-primary button-large">view all</button>
-      <button className="button button-primary button-inverted">new in</button>
+      <header className="header">
+        <Header></Header>
+      </header>
     </div>
-  )
+  );
 }

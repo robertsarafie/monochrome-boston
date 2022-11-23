@@ -1,0 +1,105 @@
+.header-secondary {
+  @include media-breakpoint-up(lg) {
+    background: url('/images/banners/banner-01.png') center center / cover
+      no-repeat;
+    height: 500px;
+  }
+
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0px;
+    }
+  }
+
+  &-title {
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  &-controls {
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 20px;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 28px;
+        padding-right: 100px;
+      }
+
+      @media (max-width: 1200px) {
+        padding-right: 0;
+      }
+
+      li:first-child {
+        form {
+          border: 1px solid $gray-secondary;
+          display: flex;
+          align-items: center;
+
+          button {
+            background: none;
+            border: none;
+            color: $black;
+            display: flex;
+            align-items: center;
+            font-size: 25px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+          }
+
+          input[type='search']::-webkit-search-decoration,
+          input[type='search']::-webkit-search-cancel-button,
+          input[type='search']::-webkit-search-results-button,
+          input[type='search']::-webkit-search-results-decoration {
+            display: none;
+          }
+
+          input {
+            background: none;
+            border: none;
+            font-family: 'Roboto';
+            font-size: 14px;
+
+            &:focus {
+              outline: none;
+            }
+
+            &::placeholder {
+              color: $black;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-connect {
+    ul {
+      color: $white;
+      font-size: 28px;
+      display: flex;
+      gap: 20px;
+      padding-left: 100px;
+
+      @media (max-width: 1200px) {
+        padding-left: 0;
+      }
+
+      li:last-child {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
