@@ -1,0 +1,29 @@
+.home-catalog-preview {
+  .product-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    @include media-breakpoint-up(lg) {
+      gap: 25px;
+    }
+
+    & > li {
+      flex-basis: 40%;
+      flex-grow: 1;
+    }
+
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: space-between;
+
+      & > li {
+        width: 25.11737089201878%; // 321 / 1278
+        flex-basis: auto;
+        flex-grow: 0;
+      }
+    }
+  }
+}

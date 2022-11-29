@@ -24,3 +24,6 @@ body {
   font-family: 'Playfair Display';
   color: $brand-primary;
 }
+
+@import './homepage/index';
+@import './catalog/index';

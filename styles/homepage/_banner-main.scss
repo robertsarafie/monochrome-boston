@@ -1,0 +1,17 @@
+.banner-main {
+  background: $brand-primary url('/images/banners/banner-03.png') center center /
+    cover no-repeat;
+  height: 177px;
+  margin-bottom: 27px;
+
+  &-inner {
+    height: 177px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    :link {
+      margin-bottom: 30px;
+    }
+  }
+}

@@ -98,6 +98,12 @@
           }
         }
 
+        @include media-breakpoint-up(lg) {
+          ul:nth-of-type(1) {
+            order: 1;
+          }
+        }
+
         .vl {
           border: 0.5px solid $white;
         }
@@ -162,6 +168,8 @@
 
               @include media-breakpoint-up(lg) {
                 margin-bottom: 13px;
+                width: 100%;
+                height: 34px;
               }
 
               &:focus {
@@ -189,7 +197,7 @@
 
               @include media-breakpoint-up(lg) {
                 align-self: unset;
-                margin-bottom: 17px;
+                margin-bottom: 7px;
               }
             }
 

@@ -1,0 +1,50 @@
+.product-tile {
+  &-image {
+    position: relative;
+
+    img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .wishlist {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+      line-height: 0;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 40px;
+        top: 20px;
+        right: 20px;
+      }
+    }
+  }
+
+  &-title {
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    font-weight: 600;
+    margin: 0;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 22px;
+      line-height: 39px;
+      text-transform: uppercase;
+    }
+  }
+
+  &-price {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    line-height: 27px;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 22px;
+      line-height: 39px;
+    }
+  }
+}

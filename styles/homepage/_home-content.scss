@@ -1,0 +1,53 @@
+.home-content {
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    justify-content: space-between;
+    gap: 146px;
+  }
+
+  &-image {
+    background: $brand-primary url('/images/banners/banner-02.png') center
+      center / cover no-repeat;
+    height: 176px;
+    width: 100%;
+    margin-bottom: 26px;
+
+    @include media-breakpoint-up(lg) {
+      background-image: url('/images/banners/banner-02.png');
+      max-width: 100%;
+      max-height: 666px;
+      height: auto;
+    }
+  }
+
+  &-description {
+    @include media-breakpoint-up(lg) {
+      max-width: 556px;
+      padding: 10px 0;
+    }
+
+    &-title {
+      font-size: 18px;
+      line-height: 33px;
+      margin-bottom: 10px;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 44px;
+        font-weight: 600;
+        margin-bottom: 40px;
+      }
+    }
+
+    p {
+      font-family: 'Roboto';
+      font-weight: 300;
+      line-height: 32px;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 22px;
+        line-height: 43px;
+        margin-bottom: 68px;
+      }
+    }
+  }
+}
