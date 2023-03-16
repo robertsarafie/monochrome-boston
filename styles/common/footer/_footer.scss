@@ -202,16 +202,29 @@
             }
 
             .privacy-inner {
-              display: flex;
-              align-items: flex-start;
-              justify-content: center;
+              text-align: center;
+              margin-bottom: 24px;
+
+              @include media-breakpoint-up(lg) {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                text-align: unset;
+                margin-bottom: unset;
+              }
 
               input {
                 vertical-align: top;
                 margin-top: 5px;
+                margin-left: 5px;
+
+                @include media-breakpoint-up(lg) {
+                  margin-left: unset;
+                }
               }
 
               label {
+                display: inline;
                 padding-left: 10px;
                 margin-bottom: 34px;
 

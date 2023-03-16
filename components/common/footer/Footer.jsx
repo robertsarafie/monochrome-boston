@@ -137,8 +137,12 @@ export default function Footer() {
                   </button>
 
                   <div className="privacy-inner">
-                    <input type="checkbox" name="I agree" id="I agree"></input>
-                    <label for="I agree">
+                    <input
+                      type="checkbox"
+                      name="I agree"
+                      id="consent-box"
+                    ></input>
+                    <label htmlFor="I agree">
                       I agree with{' '}
                       <Link href="/" title="Privacy Policy">
                         Privacy Policy
@@ -163,7 +167,7 @@ export default function Footer() {
                     rel="noopener noreferrer"
                     title="Youtube"
                   >
-                    <i class="fa-brands fa-youtube"></i>
+                    <i className="fa-brands fa-youtube"></i>
                   </a>
                 </li>
 
@@ -174,7 +178,7 @@ export default function Footer() {
                     rel="noopener noreferrer"
                     title="Twitter"
                   >
-                    <i class="fa-brands fa-twitter"></i>
+                    <i className="fa-brands fa-twitter"></i>
                   </a>
                 </li>
 
@@ -185,7 +189,7 @@ export default function Footer() {
                     rel="noopener noreferrer"
                     title="Facebook"
                   >
-                    <i class="fa-brands fa-facebook-f"></i>
+                    <i className="fa-brands fa-facebook-f"></i>
                   </a>
                 </li>
 
@@ -196,7 +200,7 @@ export default function Footer() {
                     rel="noopener noreferrer"
                     title="Instagram"
                   >
-                    <i class="fa-brands fa-instagram"></i>
+                    <i className="fa-brands fa-instagram"></i>
                   </a>
                 </li>
               </ul>

@@ -7,6 +7,46 @@
   font-size: 22px;
   padding: 8px 18px;
   border: 1px solid $brand-primary;
+  transition: color 0.2s linear, background-color 0.2s linear;
+
+  &:hover {
+    color: $white;
+    background-color: $brand-primary;
+  }
+
+  &-filter-white {
+    font-size: 16px;
+    padding: 7px 30px;
+    width: 100%;
+    border: 1px solid $gray-primary;
+    text-transform: uppercase;
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    transition: color 0.2s linear, background-color 0.2s linear;
+
+    &:hover {
+      color: $white;
+      background-color: $brand-primary;
+    }
+  }
+
+  &-filter-black {
+    font-size: 16px;
+    padding: 7px 30px;
+    width: 100%;
+    border: 1px solid $gray-primary;
+    text-transform: uppercase;
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    color: $white;
+    background-color: $brand-primary;
+    transition: color 0.2s linear, background-color 0.2s linear;
+
+    &:hover {
+      color: $brand-primary;
+      background-color: unset;
+    }
+  }
 
   &-va-small {
     background: unset;

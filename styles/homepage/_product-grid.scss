@@ -1,0 +1,23 @@
+.product-grid {
+  display: none;
+
+  &:nth-child(1) {
+    display: block;
+  }
+
+  &:nth-child(2) {
+    display: block;
+  }
+
+  .product-tiles {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    gap: 1.87793427%; // 24 / 1278
+
+    @include media-breakpoint-up(lg) {
+      grid-template-columns: repeat(4, 1fr);
+      display: grid;
+      gap: 1.87793427%; // 24 / 1278
+    }
+  }
+}

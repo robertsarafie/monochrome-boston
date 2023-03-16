@@ -1,8 +1,19 @@
-.header-secondary {
-  @include media-breakpoint-up(lg) {
-    background: url('/images/banners/banner-01.png') center center / cover
-      no-repeat;
-    height: 500px;
+.header-secondary-catalog {
+  margin-top: 40px;
+  margin-bottom: 50px;
+
+  &-monochrome {
+    h1 {
+      font-size: 70px;
+      font-family: 'Roboto';
+      font-weight: normal;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      line-height: 78px;
+    }
   }
 
   &-inner {
@@ -84,7 +95,6 @@
 
   &-connect {
     ul {
-      color: $white;
       font-size: 28px;
       display: flex;
       gap: 20px;
@@ -93,49 +103,6 @@
       @media (max-width: 1200px) {
         padding-left: 0;
       }
-
-      li:first-child {
-        color: $white;
-        transition: color 0.2s linear;
-      }
-
-      li:first-child:hover {
-        color: #ff0000;
-      }
-
-      li:nth-child(2) {
-        color: $white;
-        transition: color 0.2s linear;
-      }
-
-      li:nth-child(2):hover {
-        color: #3b5998;
-      }
-
-      li:nth-child(3) {
-        color: $white;
-        transition: color 0.2s linear;
-      }
-
-      li:nth-child(3):hover {
-        color: #00acee;
-      }
-
-      li:nth-child(4) {
-        color: $white;
-        transition: color 0.2s linear;
-      }
-
-      li:nth-child(4):hover {
-        color: linear-gradient(
-          to bottom right,
-          #8a3ab9,
-          #bc2a8d,
-          #fccc63,
-          #fbad50
-        );
-      }
-      // de incercat de fixat aici
 
       li:last-child {
         font-size: 16px;

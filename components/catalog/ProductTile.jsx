@@ -12,7 +12,7 @@ export default function ProductTile() {
           </Link>
 
           <Link href="/" title="Wishlist" className="wishlist">
-            <i class="fa-regular fa-heart"></i>
+            <i className="fa-regular fa-heart"></i>
           </Link>
         </div>
 

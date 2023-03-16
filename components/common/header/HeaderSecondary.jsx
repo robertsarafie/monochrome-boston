@@ -12,7 +12,7 @@ export default function HeaderSecondary() {
               rel="noopener noreferrer"
               title="Youtube"
             >
-              <i class="fa-brands fa-youtube"></i>
+              <i className="fa-brands fa-youtube"></i>
             </a>
           </li>
 
@@ -23,7 +23,7 @@ export default function HeaderSecondary() {
               rel="noopener noreferrer"
               title="Facebook"
             >
-              <i class="fa-brands fa-facebook"></i>
+              <i className="fa-brands fa-facebook"></i>
             </a>
           </li>
 
@@ -34,7 +34,7 @@ export default function HeaderSecondary() {
               rel="noopener noreferrer"
               title="Twitter"
             >
-              <i class="fa-brands fa-twitter"></i>
+              <i className="fa-brands fa-twitter"></i>
             </a>
           </li>
 
@@ -45,7 +45,7 @@ export default function HeaderSecondary() {
               rel="noopener noreferrer"
               title="Instagram"
             >
-              <i class="fa-brands fa-instagram"></i>
+              <i className="fa-brands fa-instagram"></i>
             </a>
           </li>
 
@@ -78,19 +78,19 @@ export default function HeaderSecondary() {
 
           <li>
             <Link href="/" title="My Account">
-              <i class="fa-solid fa-user"></i>
+              <i className="fa-solid fa-user"></i>
             </Link>
           </li>
 
           <li>
             <Link href="/" title="Favorites">
-              <i class="fa-solid fa-heart"></i>
+              <i className="fa-solid fa-heart"></i>
             </Link>
           </li>
 
           <li>
             <Link href="/" title="Cart">
-              <i class="fa-solid fa-cart-shopping"></i>
+              <i className="fa-solid fa-cart-shopping"></i>
             </Link>
           </li>
         </ul>

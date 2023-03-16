@@ -2,6 +2,21 @@
 @import './home-catalog-preview';
 @import './home-content';
 @import './catalog-ctas';
+@import './product-grid';
+@import './header-main';
+@import './load-more';
+
+.content-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 28px;
+
+  @include media-breakpoint-up(lg) {
+    gap: 50px;
+    margin-bottom: 128px;
+  }
+}
 
 .content-main {
   display: flex;
